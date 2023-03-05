@@ -46,5 +46,5 @@ if __name__ == "__main__":
 	list2 = regeneratedList(list1)
 
 	while list2:
-		print(list2.data, end=" ")
+		print(list2.data, end="\n")
 		list2 = list2.next

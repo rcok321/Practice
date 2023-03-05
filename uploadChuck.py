@@ -4,6 +4,7 @@ def uploadChuck(file_length, file_uploaded):
     start = 0
     for u,v in file_uploaded:
         uploadfile_count = u-1-start
+        # '{0:b}'.format(uploadfile_count) --> 二進制表示 e.g. 10 --> 1010 表示要分兩次上傳
         output += sum([int(e) for e in '{0:b}'.format(uploadfile_count)])
         start = v
     # edge case
